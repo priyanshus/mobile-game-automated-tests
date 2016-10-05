@@ -38,13 +38,13 @@ To setup this project you have to follow the below steps:
 
 3. If you are thinking to run the tests across different device in parallel. Then you have to start same number of appium servers as your devices count. Make sure you start the appium servers on different ports as below.
 
-`appium -p [port] -cp [port] -bp [port] -U "[UUID]"`
+   `appium -p [port] -cp [port] -bp [port] -U "[UUID]"`
 
-For example, if you have two devices to run the tests. Start two appium servers as:
+  For example, if you have two devices to run the tests. Start two appium servers as:
    
-`appium -p 5234 -cp 5234 -bp 5345 -U "4239882fls20"`
+  `appium -p 5234 -cp 5234 -bp 5345 -U "4239882fls20"`
 
-`appium -p 6234 -cp 6234 -bp 6345 -U "123434fsfsa"`
+  `appium -p 6234 -cp 6234 -bp 6345 -U "123434fsfsa"`
 
 4. Configure the testng.xml file as per the device uuid and screen size. You also need to make sure that the server port used in testng.xml is same as you started above. 
    
