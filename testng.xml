@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Mobile Tests" parallel="tests" thread-count="2">
+
+	<test name="Small Screen">
+		<parameter name="deviceIdentity" value="emulator-id" />
+		<parameter name="url" value="http://127.0.0.1:1234/wd/hub" />
+		<parameter name="deviceSize" value="emulator" />
+		<classes>
+			<class name="org.tests.HillClimbingTest" />
+		</classes>
+	</test>
+
+	<test name="Big Screen">
+		<parameter name="deviceIdentity" value="4239882fls20" />
+		<parameter name="url" value="http://127.0.0.1:5234/wd/hub" />
+		<parameter name="deviceSize" value="big" />
+		<classes>
+			<class name="org.tests.HillClimbingTest" />
+		</classes>
+	</test>
+</suite> 
