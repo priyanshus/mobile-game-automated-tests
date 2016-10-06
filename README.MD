@@ -4,17 +4,17 @@
 
 Basically the core of this project is pixel based comparison of images. The high-level flow of project is like below:
 
-1. Launch the mobile games using the Appium
-2. Capture screenshot of game screens using the Appium
-3. Perform a sub image search from captured screenshot using the ImageMagic tool
+1. Launches the mobile games using the Appium
+2. Captures screenshot of game screens using the Appium
+3. Performs a sub image search from captured screenshot using the ImageMagic tool
 4. The search will return the coordinates of matching pixels
-5. Use the coordinates to interact with elements using the Appium
+5. Uses the coordinates to interact with elements using the Appium
 
 The sub image will be treated as a locater and found coordinates will be used to interact with the elements.
 
 ## What about verifications?
 
-Verifications is also done on the basis image comparison. To verify the presence of any element on game screen, you have to use that element as a sub image. Perform the image search and verify if sub images exists in screenshot.
+Verifications are also done on the basis of image comparison. To verify the presence of any element on game screen, you have to use that element as a sub image. Perform the image search and verify if sub images exist in captured screenshot.
 
 ## How to setup the project?
 
