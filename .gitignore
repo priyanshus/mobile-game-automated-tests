@@ -5,4 +5,7 @@ bin
 :q
 
 
-
+.settings/
+.classpath
+.project
+/target/
